@@ -90,7 +90,10 @@ export function testSuite({ assert, funcs, APP }) {
       it("Can also handle special characters", function () {
         const input = "This is a sentence(!) with multiple special characters."
         const res = funcs.exercise02(input)
-        assert.equal(res, "THIS IS A SENTENCE(!) WITH MULTIPLE SPECIAL CHARACTERS.")
+        assert.equal(
+          res,
+          "THIS IS A SENTENCE(!) WITH MULTIPLE SPECIAL CHARACTERS.",
+        )
       })
     })
 
@@ -130,8 +133,7 @@ export function testSuite({ assert, funcs, APP }) {
         assert.equal(res, 4)
       })
       it("Can also handle special characters", function () {
-        const input =
-          "Not everything - separated by spaces, is a word..."
+        const input = "Not everything - separated by spaces, is a word..."
         const res = funcs.exercise04(input)
         assert.equal(res, 8)
       })
